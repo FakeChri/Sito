@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e0b056;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Lora', semibol;
+}
+
+.corner-image {
+    position: absolute;
+    width: 7.5%;
+    height: auto;
+}
+
+/* Posizionamento delle immagini agli angoli con rotazione */
+.top-left {
+    top: 2%;
+    left: 3%;
+    transform: rotate(130deg);
+}
+
+.top-right {
+    top: 2%;
+    right: 3%;
+    transform: rotate(-130deg);
+}
+
+.bottom-left {
+    bottom: 3.5%;
+    left: 3%;
+    transform: rotate(50deg);
+}
+
+.bottom-right {
+    bottom: 3.5%;
+    right: 3%;
+    transform: rotate(-50deg);
+}
+
+/* Linee decorative */
+.line {
+    position: absolute;
+    background-color: #fff8dc;
+}
+
+.top {
+    top: 10%;
+    left: 13%;
+    right: 13%;
+    height: 0.1rem;
+}
+
+.bottom {
+    bottom: 11.3%;
+    left: 13%;
+    right: 13%;
+    height: 0.1rem;
+}
+
+.right {
+    top: 20%;
+    bottom: 23%;
+    right: 6.8%;
+    width: 0.1rem;
+}
+
+.left {
+    top: 20%;
+    bottom: 23%;
+    left: 6.8%;
+    width: 0.1rem;
+}
+
+#center-container {
+    text-align: center;
+    position: relative;
+    height: 5vw;
+}
+
+#center-text {
+    font-size: 2vw;
+    color: #000000;
+}
+
+#arrow-image {
+    width: 1.5%;
+    height: auto;
+    margin-top: 3vw;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+    left: 49%;
+    transform: translateX(-50%);
+}
+
+#left-button, #right-button {
+    background-color: transparent;
+    border: 2px solid #fff8dc;
+    color: #fff8dc;
+    font-size: 1.5vw;
+    padding: 0.5vw 1vw;
+    cursor: pointer;
+    display: none;
+    width: 6vw;
+    height: 3vw;
+    line-height: 2vw;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#left-button {
+    position: absolute;
+    bottom: calc(50% - 6vw);
+    left: calc(50% - 8vw);
+}
+
+#right-button {
+    position: absolute;
+    bottom: calc(50% - 6vw);
+    right: calc(50% - 8vw);
+}
+
+#left-button:hover, #right-button:hover {
+    background-color: #fff8dc;
+    color: #e0b056;
+}
+
+#button-container {
+    bottom: 40.22vh;
+    width: 180vh;
+    height: 78.2vh;
+    position: relative;
+    overflow: hidden;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.25">
+    <!-- Collegamento ai font di Google e al foglio di stile -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dottoressa Arpilli - Domanda</title>
+</head>
+<body>
+    <!-- Immagini decorative agli angoli -->
+    <img src="./img/fiori.png" class="corner-image top-left">
+    <img src="./img/fiori.png" class="corner-image top-right">
+    <img src="./img/fiori.png" class="corner-image bottom-left">
+    <img src="./img/fiori.png" class="corner-image bottom-right">
+
+    <!-- Linee decorative -->
+    <div class="line top"></div>
+    <div class="line right"></div>
+    <div class="line bottom"></div>
+    <div class="line left"></div>
+
+    <!-- Contenitore centrale -->
+    <div id="center-container">
+        <!-- Testo centrale -->
+        <div id="center-text"></div>
+        <!-- Immagini che vengono mostrate in base alla risposta dell'utente -->
+        <img id="felice" src="./img/felice.gif" style="display: none; height: 75%;">
+        <img id="triste" src="./img/triste.gif" style="display: none; height: 75%;">
+        <!-- Immagine della freccia -->
+        <img src="./img/right-arrow.png" alt="Freccia" id="arrow-image">
+        <!-- Contenitore dei pulsanti -->
+        <div id="button-container">
+            <button id="left-button">Si</button>
+            <button id="right-button">No</button>
+        </div>
+    </div>
+
+    <!-- Collegamento al file JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
